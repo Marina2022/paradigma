@@ -1,0 +1,136 @@
+@import '../../mixins.scss';
+
+@font-face {
+  font-family: 'Cambria';
+  src: local('Cambria'), url('../../fonts/Cambria.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: local('Cambria-Bold'), url('../../fonts/Cambria-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url('../../fonts/Inter-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url('../../fonts/Inter-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../../fonts/Roboto-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../../fonts/Roboto-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../../fonts/Roboto-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  position: relative;
+  background: url(../../assets/bg-short.jpg) center/contain repeat-y;
+  @include t {
+    background-size: 150%;
+  }
+  @include m {
+    background-size: 300%;
+  }
+
+
+}
+
+.container {
+  padding-inline: 100px;
+  margin: 0 auto;
+
+  @include t {
+    padding-inline: 50px;
+  }
+
+  @include m {
+    padding-inline: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: rgb(0,0,0,.2);
+}

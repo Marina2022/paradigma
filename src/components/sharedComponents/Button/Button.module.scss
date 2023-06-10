@@ -1,0 +1,26 @@
+@import '../../../mixins.scss';
+
+.btn {
+  padding: 18px 40px;
+  background: linear-gradient(86.18deg, #3972CD 0%, #872693 99.4%);
+  border-radius: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(86.18deg, #5188DF 0%, #A634B5 99.4%);
+  }
+
+  &:active {
+    background: linear-gradient(86.18deg, #2862BF 0%, #801A8C 99.4%);
+  }
+
+  @include m {
+    width: 100%;
+  }
+
+}

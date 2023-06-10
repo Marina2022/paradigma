@@ -1,0 +1,24 @@
+.btn {
+  padding: 18px 40px;
+  border: 1px solid #3972CD;
+  border-image: linear-gradient(86.18deg, #5188DF 0%, #A634B5 99.4%);
+  border-image-slice: 1;
+  border-radius: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(86.18deg, #5188DF 0%, #A634B5 99.4%);
+  }
+
+  &:active {
+    color: #fff;
+    background: linear-gradient(86.18deg, #2862BF 0%, #801A8C 99.4%);
+  }
+
+}

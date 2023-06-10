@@ -1,0 +1,33 @@
+@import '../../../mixins.scss';
+
+.phone {
+  font-family: 'Cambria', serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #192B39;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../../../assets/phone/phone-icon.svg) center/contain;
+    left: -45px;
+    top: 5px;
+    @include t {
+      width: 25px;
+      height: 25px;
+      top: 0;
+      left: -33px;
+    }
+  }
+
+  @include t {
+    font-size: 22px;
+    line-height: 23px;
+  }
+
+
+}
+

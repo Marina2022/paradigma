@@ -1,8 +1,9 @@
+import Hero from "./Hero/Hero";
 
 const MainPage = () => {
   return (
     <div>
-      dadada
+      <Hero />
     </div>
   );
 };

@@ -1,0 +1,82 @@
+@import '../../../../mixins.scss';
+
+.hero {
+  margin-bottom: 246px;
+}
+
+.wrapper {
+  display: flex;
+
+  @include t {
+    flex-wrap: wrap;
+  }
+}
+
+.content {
+  width:50%;
+  @include t {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.title {
+  font-family: 'Cambria', serif;
+  font-weight: 700;
+  font-size: 86px;
+  line-height: 101px;
+
+  color: #192B39;
+  margin-bottom: 40px;
+
+
+  @include t {
+    font-size: 56px;
+    line-height: 50px;
+  }
+
+  @include m {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+
+.imgWrapper {
+  width:50%;
+  @include t {
+    width: 100%;
+    order: 0;
+    margin-bottom: 50px;
+  }
+
+  @include m {
+    margin-bottom: 30px;
+  }
+}
+
+.image {
+  max-width: 100%;
+
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  color: #5F6267;
+  margin-bottom: 70px;
+
+  @include m {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+}
+
+.coloredText {
+  background: linear-gradient(87.76deg, #3972CD 5.62%, #872693 32.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}

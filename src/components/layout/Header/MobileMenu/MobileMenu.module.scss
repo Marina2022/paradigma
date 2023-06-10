@@ -1,0 +1,51 @@
+.mobileMenu {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 345%;
+  background: #fff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+
+}
+
+.mobileMenuItem {
+  font-size: 28px;
+  padding: 25px 30px;
+  border-bottom: 2px solid #D7E9FF;
+
+  font-family: 'Cambria', serif;
+  font-weight: 400;
+  line-height: 23px;
+  color: #55585D;
+  width: 100%;
+
+  &:hover {
+    color: #192B39;
+    font-weight: 700;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.mobileCloseBtn {
+  width: 21px;
+  height: 21px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.mobilePhone {
+  margin-left: 30px;
+  font-size: 28px;
+  &:before {
+    top: 6px;
+  }
+}
