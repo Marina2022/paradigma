@@ -2,6 +2,12 @@
 
 .hero {
   margin-bottom: 246px;
+  @include t {
+    margin-bottom: 170px;
+  }
+  @include m {
+    margin-bottom: 100px;
+  }
 }
 
 .wrapper {
@@ -43,7 +49,9 @@
 
 
 .imgWrapper {
-  width:50%;
+  width:100%;
+  margin-bottom: 70px;
+
   @include t {
     width: 100%;
     order: 0;
@@ -79,4 +87,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
+}
+
+.socials {
+  margin-left: auto;
+  @include m {
+    display: none;
+  }
 }

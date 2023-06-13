@@ -1,6 +1,7 @@
 import s from './Hero.module.scss';
 import heroImage from '../../../../assets/hero/hero-iimage.png'
 import Button from "../../../sharedComponents/Button/Button";
+import Socials from "../../../sharedComponents/Socials/Socials";
 
 const Hero = () => {
   return (
@@ -19,9 +20,13 @@ const Hero = () => {
             <Button text={"Заказать услугу"}></Button>
 
           </div>
-          <div className={s.imgWrapper}>
-            <img className={s.image} src={heroImage} alt=""/>
+          <div>
+            <div className={s.imgWrapper}>
+              <img className={s.image} src={heroImage} alt=""/>
+            </div>
+            <Socials classname={s.socials}/>
           </div>
+
         </div>
       </div>
     </div>

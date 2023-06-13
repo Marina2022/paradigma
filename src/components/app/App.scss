@@ -86,15 +86,16 @@ body {
 }
 
 .container {
-  padding-inline: 100px;
+  max-width: 1720px;
   margin: 0 auto;
 
   @include t {
-    padding-inline: 50px;
+    max-width: 767px;
   }
 
   @include m {
-    padding-inline: 10px;
+    max-width: unset;
+    width: 95%;
   }
 }
 
@@ -124,7 +125,6 @@ li {
 p, h1, h2, h3 {
   margin: 0;
 }
-
 
 .overlay {
   width: 100%;

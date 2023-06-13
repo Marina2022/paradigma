@@ -1,0 +1,93 @@
+@import '../../../../../mixins';
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 351px;
+  min-height: 538px;
+  background-color: #F5EEF6;
+  max-width: 100%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+
+  @include m {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #D7E9FF;
+    min-height: 558px;
+    transform: translateY(20px);
+    button {
+      color: #fff;
+      background: linear-gradient(86.18deg, #2862BF 0%, #801A8C 99.4%);
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.titleText {
+  margin-left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.priceWrapper {
+  color: #872693;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.featuresList {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.featuresItem {
+  margin-bottom: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    position: absolute;
+    left: 0px;
+    content: '';
+    color: #7BB501;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../../../../assets/services/check-active.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.featuresItemInactive {
+  color: #B3B3B3;
+  &:before {
+    background-image:  url(../../../../../assets/services/check-inactive.svg);
+  }
+}
+
+.cardBtn {
+  margin-top: auto;
+}
