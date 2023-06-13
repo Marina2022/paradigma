@@ -1,0 +1,71 @@
+@import '../../../../mixins.scss';
+
+.about {
+  background-color: #D7E9FF;
+  padding: 80px 0;
+}
+
+.wrapper {
+  display: flex;
+
+  @include t {
+    flex-wrap: wrap;
+  }
+
+}
+
+.imgWrapper {
+  width: 50%;
+  @include t {
+    width: 100%;
+    order: 1;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.content {
+  width: 50%;
+  @include t {
+    order: 0;
+    width: 100%;
+  }
+}
+
+.title {
+  font-family: 'Cambria', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #192B39;
+  margin-bottom: 70px;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #5F6267;
+
+  @include m {
+    font-size: 16px;
+  }
+}
+
+.firstPar {
+  margin-bottom: 10px;
+}
+
+.coloredText {
+  background: linear-gradient(87.76deg, #3972CD 5.62%, #872693 32.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+
+
+}

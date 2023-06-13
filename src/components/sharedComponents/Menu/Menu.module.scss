@@ -1,0 +1,42 @@
+@import '../../../mixins.scss';
+
+.menuLink {
+  font-family: 'Cambria', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #55585D;
+  width: 100%;
+
+  &:after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: #192B39;
+    font-weight: 700;
+  }
+
+  @include t {
+    font-size: 18px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+
+  @include t {
+    width: 45%;
+  }
+  @include m {
+    display: none;
+  }
+}

@@ -31,7 +31,6 @@
   font-weight: 700;
   font-size: 86px;
   line-height: 101px;
-
   color: #192B39;
   margin-bottom: 40px;
 
@@ -44,6 +43,7 @@
   @include m {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 30px;
   }
 }
 

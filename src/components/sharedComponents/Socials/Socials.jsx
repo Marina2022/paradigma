@@ -23,7 +23,7 @@ const Socials = ({classname}) => {
         </a>
       </li>
     </ul>
-  );
-};
+  )
+}
 
 export default Socials;

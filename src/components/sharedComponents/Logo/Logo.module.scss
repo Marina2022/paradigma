@@ -5,11 +5,6 @@
   width: 150px;
   height: 100px;
 
-  @include t {
-    width: 100px;
-    height: 67px;
-  }
-
   @include m {
     width: 70px;
     height: 47px;

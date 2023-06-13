@@ -5,14 +5,13 @@ import nextBtn from '../../../../assets/services/slider-right-btn.svg'
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination} from 'swiper';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import {useRef} from "react";
 import cn from "classnames";
 import {mockServices} from "../../../../mocks/services";
-
 
 const Services = () => {
   const navigationPrevRef = useRef(null)
@@ -43,12 +42,12 @@ const Services = () => {
                       swiperRef.current = swiper;
                     }
                   }
-
                   spaceBetween={32}
                   slidesPerView={1}
-                  freeMode={true}
+                  loop
                   pagination={{
                     clickable: true,
+                    gap: 10,
                   }}
                   mousewheel
                   breakpoints={{
@@ -56,11 +55,11 @@ const Services = () => {
                       slidesPerView: 2
                     },
                     1720: {
+                      loop: false,
                       slidesPerView: 4
                     }
                   }}
           >
-
             {
               mockServices.map((service, index) => {
                 return (
@@ -70,7 +69,6 @@ const Services = () => {
                 )
               })
             }
-
           </Swiper>
 
           <button className={cn(s.sliderBtn, s.prevBtn)} ref={navigationPrevRef}>
@@ -81,10 +79,8 @@ const Services = () => {
           </button>
         </div>
       </div>
-
     </div>
   )
-    ;
 };
 
 export default Services;
