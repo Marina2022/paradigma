@@ -1,19 +1,42 @@
 import s from './Articles.module.scss';
 import {articles} from "../../../../mocks/articles";
 import OneArticle from "./OneArticle/OneArticle";
+import {useEffect, useState} from "react";
 
 const Articles = () => {
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setShowAll(false)
+    }
+
+  }, [])
+
+  const [showAll, setShowAll] = useState(true)
+
   return (
     <div className={s.articles}>
       <div className="container">
         <h2 className={s.title}>СТАТЬИ</h2>
         <ul className={s.articlesList}>
           {
-            articles.map((article, index)=>{
+            showAll && articles.map((article, index) => {
               return (
-                <OneArticle {...article} key={article.id} />
+                <OneArticle {...article} key={article.id}/>
               )
             })
+          }
+
+          {
+            !showAll && articles.slice(0, 3).map((article, index) => {
+              return (
+                <OneArticle {...article} key={article.id}/>
+              )
+            })
+          }
+
+          {
+            !showAll && <button className={s.showAllBtn} onClick={()=>setShowAll(true)}>Показать еще ↓</button>
           }
         </ul>
       </div>

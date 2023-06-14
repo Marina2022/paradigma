@@ -11,7 +11,7 @@ const ServicesCard = ({name, price, perWhat, features}) => {
         <span className={s.titleText}>{name}</span>
       </h3>
       <div className={s.priceWrapper}>
-        <span className={price}>{price.toLocaleString()}₽</span>
+        <span className={s.price}>{price.toLocaleString()}₽</span>
         <sup>/{perWhat}</sup>
       </div>
       <ul className={s.featuresList}>

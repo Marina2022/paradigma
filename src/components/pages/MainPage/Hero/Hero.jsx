@@ -26,7 +26,6 @@ const Hero = () => {
             </div>
             <Socials classname={s.socials}/>
           </div>
-
         </div>
       </div>
     </div>

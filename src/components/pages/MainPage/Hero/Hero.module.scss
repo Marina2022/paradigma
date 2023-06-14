@@ -1,7 +1,7 @@
 @import '../../../../mixins.scss';
 
 .hero {
-  margin-bottom: 246px;
+  margin-bottom: 155px;
   @include t {
     margin-bottom: 170px;
   }
@@ -15,6 +15,10 @@
 
   @include t {
     flex-wrap: wrap;
+  }
+
+  @include m {
+    position: relative;
   }
 }
 
@@ -33,6 +37,7 @@
   line-height: 101px;
   color: #192B39;
   margin-bottom: 40px;
+  margin-top: 29px;
 
 
   @include t {
@@ -41,12 +46,13 @@
   }
 
   @include m {
+    position: absolute;
+    top: -31px;
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 30px;
   }
 }
-
 
 .imgWrapper {
   width:100%;
@@ -59,7 +65,8 @@
   }
 
   @include m {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: 83px;
   }
 }
 
@@ -92,6 +99,6 @@
 .socials {
   margin-left: auto;
   @include m {
-    display: none;
+    display: none!important;
   }
 }

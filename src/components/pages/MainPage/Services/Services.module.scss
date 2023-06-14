@@ -1,8 +1,18 @@
 @import '../../../../mixins';
 
 :global {
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -16px!important;
+    @include t {
+      bottom: -14px!important;
+    }
+  }
+
   .swiper-wrapper{
-    height: 661px!important;
+    height: 674px!important;
+    @include m {
+      height: 525px!important;
+    }
   }
   .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: #872693;
@@ -25,7 +35,7 @@
   font-size: 48px;
   line-height: 56px;
   color: #192B39;
-  margin-bottom: 70px;
+  margin-bottom: 36px;
 
   @include m {
     font-size: 32px;
@@ -40,10 +50,15 @@
   line-height: 135%;
   color: #5F6267;
   margin-bottom: 106px;
+
+  @include m {
+    font-size: 21px;
+    line-height: 135%;
+    margin-bottom: 81px;
+  }
 }
 
 .sliderWraper {
-
   display: flex;
   width: 70%;
   justify-content: space-between;
@@ -55,7 +70,6 @@
 }
 
 .slider {
-
   --swiper-pagination-bullet-horizontal-gap: 5px;
   --swiper-pagination-bullet-width: 10px;
   --swiper-pagination-bullet-height: 10px;
@@ -75,7 +89,7 @@
 .sliderBtn {
   z-index: 1;
   position: absolute;
-  top: 42%;
+  top: 39.6%;
   transform: translateY(-50%);
   width: 47px;
   height: 47px;

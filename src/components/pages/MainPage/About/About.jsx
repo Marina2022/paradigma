@@ -8,7 +8,7 @@ const About = () => {
       <div className="container">
         <div className={s.wrapper}>
           <div className={s.imgWrapper}>
-            <img src={aboutImg} alt="about image"/>
+            <img src={aboutImg} alt="about"/>
           </div>
           <div className={s.content}>
             <h2 className={s.title}>О НАС</h2>
@@ -32,14 +32,9 @@ const About = () => {
               используется <span className={s.coloredText}>лишь на 20%</span>? — Правильно, незачем и наш аудит поможет выявить такие случаи нерационального
               использования ресурсов, предложить наиболее оптимальное решение.
             </p>
-
-
           </div>
-
         </div>
-
       </div>
-
     </div>
   );
 };
