@@ -18,13 +18,17 @@
     padding: 20px;
   }
 
+
   &:hover {
-    background-color: #D7E9FF;
-    min-height: 558px;
-    transform: translateY(20px);
-    button {
-      color: #fff;
-      background: linear-gradient(86.18deg, #2862BF 0%, #801A8C 99.4%);
+    @media (min-width: 767px) {
+      background-color: #D7E9FF;
+      min-height: 558px;
+      transform: translateY(20px);
+
+      button {
+        color: #fff;
+        background: linear-gradient(86.18deg, #2862BF 0%, #801A8C 99.4%);
+      }
     }
   }
 }
@@ -86,8 +90,9 @@
 
 .featuresItemInactive {
   color: #B3B3B3;
+
   &:before {
-    background-image:  url(../../../../../assets/services/check-inactive.svg);
+    background-image: url(../../../../../assets/services/check-inactive.svg);
   }
 }
 
