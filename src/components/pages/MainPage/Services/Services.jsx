@@ -37,9 +37,10 @@ const Services = () => {
                   }}
                   onBeforeInit={
                     (swiper) => {
-                      swiper.params.navigation.prevEl = navigationPrevRef.current;
-                      swiper.params.navigation.nextEl = navigationNextRef.current;
+                      // swiper.params.navigation.prevEl = navigationPrevRef.current;
+                      // swiper.params.navigation.nextEl = navigationNextRef.current;
                       swiperRef.current = swiper;
+
                     }
                   }
                   spaceBetween={32}
@@ -71,10 +72,18 @@ const Services = () => {
             }
           </Swiper>
 
-          <button className={cn(s.sliderBtn, s.prevBtn)} ref={navigationPrevRef}>
+          <button
+            onClick={()=>{
+              swiperRef.current.slidePrev()
+            }}
+            className={cn(s.sliderBtn, s.prevBtn)} ref={navigationPrevRef}>
             <img src={prevBtn} alt="previous button"/>
           </button>
-          <button className={cn(s.sliderBtn, s.nextBtn)} ref={navigationNextRef}>
+          <button
+            onClick={()=>{
+              swiperRef.current.slideNext()
+            }}
+            className={cn(s.sliderBtn, s.nextBtn)} ref={navigationNextRef}>
             <img src={nextBtn} alt="next button"/>
           </button>
         </div>
