@@ -8,7 +8,7 @@ const OneArticle = ({id, imageUrl, title, text, date}) => {
       <h3 className={s.title}>{title}</h3>
       <p className={s.text}>{text}</p>
       <div className={s.date}>{date}</div>
-      <a className={s.link} href="#">Читать полностью</a>
+      <a className={s.link} href="/">Читать полностью</a>
     </li>
   );
 };
