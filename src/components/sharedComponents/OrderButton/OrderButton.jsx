@@ -1,9 +1,11 @@
 import s from './OrderButton.module.scss';
 import cn from "classnames";
 
-const OrderButton = ({text, classname}) => {
+const OrderButton = ({text, classname, onClick}) => {
+  
+  
   return (
-    <button className={cn(s.btn, classname)}>
+    <button onClick={onClick} className={cn(s.btn, classname)}>
       {text}
     </button>
   );

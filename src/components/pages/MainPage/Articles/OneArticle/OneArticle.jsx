@@ -1,6 +1,7 @@
 import s from './OneArticle.module.scss';
+import {Link} from "react-router-dom";
 
-const OneArticle = ({id, imageUrl, title, text, date}) => {
+const OneArticle = ({id, imageUrl, title, text, date, url}) => {
 
   return (
     <li className={s.articlesItem} >
@@ -8,7 +9,7 @@ const OneArticle = ({id, imageUrl, title, text, date}) => {
       <h3 className={s.title}>{title}</h3>
       <p className={s.text}>{text}</p>
       <div className={s.date}>{date}</div>
-      <a className={s.link} href="/">Читать полностью</a>
+      <Link className={s.link} to={`/articles/${url}`}>Читать полностью</Link>
     </li>
   );
 };

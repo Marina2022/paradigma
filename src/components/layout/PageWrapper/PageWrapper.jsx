@@ -1,14 +1,16 @@
 import Header from "../Header/Header";
-import MainPage from "../../pages/MainPage/MainPage";
 import Footer from "../Footer/Footer";
+import {Outlet} from "react-router-dom";
 
 const PageWrapper = () => {
   return (
-    <>
-      <Header/>
-      <MainPage/>
-      <Footer/>
-    </>
+      <>
+        <Header/>
+        <main >
+          <Outlet/>
+        </main>
+        <Footer/>
+      </>
   )
 }
 

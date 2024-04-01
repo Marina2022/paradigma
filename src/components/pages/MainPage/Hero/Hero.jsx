@@ -2,8 +2,12 @@ import s from './Hero.module.scss';
 import heroImage from '../../../../assets/hero/hero-iimage.png'
 import Button from "../../../sharedComponents/Button/Button";
 import Socials from "../../../sharedComponents/Socials/Socials";
+import {useNavigate} from "react-router-dom";
 
 const Hero = () => {
+  
+  const navigate = useNavigate()
+  
   return (
     <div className={s.hero}>
       <div className="container hero">
@@ -17,7 +21,7 @@ const Hero = () => {
               направленных на перехват трафика. Разумеется, услуги можно комбинировать и, например, создать архитектуру
               безопасного защищённого виртуального офиса с 1С находящегося за рубежом.
             </p>
-            <Button text={"Заказать услугу"}></Button>
+            <Button onclick={()=>navigate('/audit')} text={"Заказать услугу"}></Button>
 
           </div>
           <div>

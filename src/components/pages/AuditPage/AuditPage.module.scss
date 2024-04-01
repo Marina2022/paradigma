@@ -1,0 +1,126 @@
+@import '../../../mixins';
+
+.title {
+  color: #192B39;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 104px;
+  font-family: Cambria;
+  position: relative;
+  top: 70px;
+
+  @include t {
+    font-size: 32px;
+    top: 0;
+    margin-top: 50px;
+  }
+  
+  @include m {
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 100px;
+  
+  @include t {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+}
+
+.content {
+  width: 850px;
+  
+  @include t {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+.img {
+  width: 860px;
+  height: 539px;
+  object-fit: contain;
+  height: auto;
+  position: relative;
+  top: -130px;
+  max-width: 100%;
+  left: 75px;
+  
+  @include t {
+    left: 0;
+    width: 100%;
+    top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.par {
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: Roboto;
+  color: #5F6267;
+  line-height: 24.3px;
+  margin-bottom: 60px;
+
+  @include m {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 30px;
+  
+  @include m {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+.list {
+  margin-bottom: 50px;  
+  font-size: 18px;
+  font-family: Roboto;
+  color: #323232;
+  line-height: 24.3px;
+  margin-left: 30px;
+  max-width: 575px;
+  
+  @include t {
+    max-width: unset;
+  }
+  
+  @include m {
+    font-size: 16px;    
+    margin-bottom: 40px;
+  }    
+}
+
+.listItem {
+  list-style:disc;
+  margin-bottom: 15px;
+}
+
+
+.backBtn {
+  margin-top: -50px;  
+  @include t {
+  margin-top: -20px;
+  }  
+}
+
+.orderBtn {
+  margin-left: 25px;
+  
+  @include m {
+    margin-left: 0px;
+  }
+}

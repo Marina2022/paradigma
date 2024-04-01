@@ -5,12 +5,12 @@ import Articles from "./Articles/Articles";
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <Hero/>
       <Services/>
       <About/>
       <Articles/>
-    </div>
+    </>
   );
 };
 

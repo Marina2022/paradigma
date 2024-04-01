@@ -1,0 +1,186 @@
+@import '../../../mixins';
+
+.img {
+  width: 100%;
+  aspect-ratio: 2.6;
+  object-position: center;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 42px;
+
+
+  @include m {
+    display: none;
+  }
+}
+
+.mobileImg {
+  display: none;
+
+  @include m {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2.6;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.backBtn {
+  margin-top: -50px;
+  margin-bottom: 60px;
+
+  @include t {
+    margin-top: -20px;
+  }
+
+  @include m {
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 150px;
+
+  @include t {
+    margin-left: 0px;
+  }
+
+  @include m {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+}
+
+.authorBlock {
+  width: 290px;
+  width: 13%;
+  margin-top: 257px;
+  margin-right: 84px;
+
+  @include t {
+    margin-top: 160px;
+    width: 28%;
+  }
+
+  @include m {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+}
+
+.contentBlock {
+  max-width: 995px;
+  width: 100%;
+}
+
+.authorWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include m {
+    flex-direction: row;
+    gap: 19px;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.ava {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+
+  @include m {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.authorTitle {
+  font-weight: 600;
+}
+
+.authorText {
+  font-size: 24px;
+  width: 100%;
+
+  @include m {
+    font-size: 18px;
+  }
+}
+
+.date {
+  margin-bottom: 100px;
+  color: #A3A3A3;
+  font-size: 24px;
+
+  @include t {
+    margin-bottom: 50px;
+  }
+
+  @include m {
+    display: none;
+  }
+}
+
+.mobileDate {
+  display: none;
+
+  @include m {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #A3A3A3;
+  }
+}
+
+.title {
+  color: #192B39;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  font-family: Cambria;
+
+  @include t {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  @include m {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+.highlightedPar {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Roboto;
+  line-height: 24.3px;
+
+  @include m {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+}
+
+.par {
+  margin-top: 13.5px;
+  font-size: 18px;
+  font-family: Roboto;
+  color: #5F6267;
+  line-height: 24.3px;
+
+  @include m {
+    font-size: 16px;
+  }
+}

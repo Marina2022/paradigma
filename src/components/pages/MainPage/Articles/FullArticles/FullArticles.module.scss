@@ -1,0 +1,45 @@
+@import '../../../../../mixins';
+
+.articles {
+  padding: 0px 0 20px 0;
+
+  @include m {
+    padding-top: 60px;
+  }
+}
+
+.title {
+  font-family: 'Cambria', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #192B39;
+  margin-bottom: 70px;
+
+  @include m {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+}
+
+.articlesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.backBtn {
+  margin-top: -50px;
+  margin-bottom: 50px;
+  
+  @include t {
+    margin-top: -20px;
+  }
+  @include m {
+    margin-top: -86px;
+    margin-bottom: 20px;
+  }
+}
+

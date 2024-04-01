@@ -17,6 +17,35 @@
     visibility: hidden;
   }
 
+    &:hover {
+    color: #192B39;
+    font-weight: 700;
+  }
+
+  @include t {
+    font-size: 18px;
+  }
+}
+
+
+.menuLinkActive {
+  
+  font-family: 'Cambria', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #55585D;
+  width: 100%;
+
+  &:after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
   &:hover {
     color: #192B39;
     font-weight: 700;
@@ -26,6 +55,7 @@
     font-size: 18px;
   }
 }
+
 
 .menu {
   display: flex;

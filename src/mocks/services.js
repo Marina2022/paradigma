@@ -129,6 +129,202 @@ export const mockServices = [
         featureName: 'Проверка технических настроек',
         active: false
       },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
+    ]
+  },
+
+  {
+    name: 'Карточка №5',
+    price: 100000,
+    perWhat: 'год',
+    features: [
+      {
+        featureName: 'Писем в месяц&nbsp;<b>до 1500</b>',
+        active: true
+      },
+      {
+        featureName: 'Контактов&nbsp;<b>до 100</b>',
+        active: true
+      },
+      {
+        featureName: 'Тестовый период&nbsp;<b>10 дней</b>',
+        active: true
+      },
+      {
+        featureName: 'Поддержка&nbsp;<b>24/7</b>',
+        active: true
+      },
+      {
+        featureName: 'Проверка технических настроек',
+        active: false
+      },
+
+
+
+
     ]
   },
 

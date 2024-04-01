@@ -12,6 +12,13 @@ const Articles = () => {
 
   }, [])
 
+  // todo - убери потом
+  // useEffect(() => {
+  //   fetch('http://185.178.44.121/api/category/smartfoni-781001bc-3a72-4e5b-8d2a-ee22e0ea7b0a/products?page=1&pageSize=20')
+  //       .then(res=>res.json())
+  //       .then(console.log)
+  // }, []);
+
   const [showAll, setShowAll] = useState(true)
 
   return (

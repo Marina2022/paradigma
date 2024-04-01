@@ -45,7 +45,7 @@ const Services = () => {
                   }
                   spaceBetween={32}
                   slidesPerView={1}
-                  loop
+                  loop={true}
                   pagination={{
                     clickable: true,
                     gap: 10,
@@ -64,7 +64,7 @@ const Services = () => {
             {
               mockServices.map((service, index) => {
                 return (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide key={index}>                    
                     <ServicesCard {...service} />
                   </SwiperSlide>
                 )
@@ -73,14 +73,14 @@ const Services = () => {
           </Swiper>
 
           <button
-            onClick={()=>{
+            onClick={() => {
               swiperRef.current.slidePrev()
             }}
             className={cn(s.sliderBtn, s.prevBtn)} ref={navigationPrevRef}>
             <img src={prevBtn} alt="previous button"/>
           </button>
           <button
-            onClick={()=>{
+            onClick={() => {
               swiperRef.current.slideNext()
             }}
             className={cn(s.sliderBtn, s.nextBtn)} ref={navigationNextRef}>
@@ -93,3 +93,5 @@ const Services = () => {
 };
 
 export default Services;
+
+

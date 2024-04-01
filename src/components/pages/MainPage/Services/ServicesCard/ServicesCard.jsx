@@ -2,8 +2,16 @@ import s from './ServicesCard.module.scss';
 import serviceTitleImg from '../../../../../assets/services/card-icon.svg'
 import cn from "classnames";
 import OrderButton from "../../../../sharedComponents/OrderButton/OrderButton";
+import {useNavigate} from "react-router-dom";
 
 const ServicesCard = ({name, price, perWhat, features}) => {
+  
+  const navigate = useNavigate()
+  const onOrderClick = ()=> {
+    console.log('hello OrderButton')
+    navigate('/audit')    
+  }
+  
   return (
     <div className={s.card}>
       <h3 className={s.title}>
@@ -25,7 +33,7 @@ const ServicesCard = ({name, price, perWhat, features}) => {
           })
         }
       </ul>
-      <OrderButton text={"Заказать"} classname={s.cardBtn} />
+      <OrderButton onClick={onOrderClick} text={"Заказать"} classname={s.cardBtn} />
     </div>
   );
 };
